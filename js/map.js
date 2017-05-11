@@ -34,20 +34,23 @@ function initMap() {
 		center: {lat: 53.3548, lng: -6.2517},
 		zoom: 8
 	});
-
-$('#vaclocation').on('change', changeLocation);
-
-function changeLocation() {
-	var place = $(this).val();
-	var location = $.grep(locations, function (n, i) {
-		return n.name == place;
-	})[0];
-
-
-	if(locations) {
-		map.setCenter({lat: locations.lat, lng: locations.lng});
-		map.setZoom(locations.zoom);	
-	 }
-  } 
 }
+  
+  
+//// still working on getting the map to change when the new one   
+//$('#selLocation').on('change', changeLocation);
+//
+//function changeLocation() {
+//	var place = $(this).val();
+//	var location = $.grep(locations, function (n, i) {
+//		return n.name == place;
+//	})[0];
+//
+//
+//	if(locations) {
+//		map.setCenter({lat: locations.lat, lng: locations.lng});
+//		map.setZoom(locations.zoom);	
+//	 }
+//  } 
+//}
 
