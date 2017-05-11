@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>HTML5 APIs: Assignment 4</title>
+  </head>
+  <body>
+  <main>
+    <h3>Vacation Destination</h3>
+    <div>
+     <form>  
+        <label id="vaclocation">Choose your favorite vacation spot!</label>
+          <select id="vaclocation" name="vaclocation">
+          <option value="ireland" name="ireland">Ireland</option>
+          <option value="bahamas" name="bahamas">Bahamas</option>
+          <option value="hawaii" name="hawaii">Hawaii</option>
+          <option value="mexico" name="mexico">Mexico</option>
+        </select> 
+        </form> 
+    </div>
+    <br>
+    <div id="map"></div>
+    </main>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+   crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNT3QFuwAljAQB2HbfIEAmGfDpJAy7vzg&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="js/map.js">
+    </script>
+  </body>
+</html>
